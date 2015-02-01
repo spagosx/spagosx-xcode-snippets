@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>testiba</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func test&lt;#component#&gt;HasAction() {
+        let actions = &lt;#sut#&gt;.&lt;#component#&gt;?.actionsForTarget(&lt;#target#&gt;, forControlEvent: .&lt;#controlEvent#&gt;) as? [String]
+        
+        if let actions_ = actions {
+            let hasAction = contains(actions!, "&lt;#selectorName#&gt;")
+            XCTAssertTrue(hasAction)
+        } else {
+            XCTAssertTrue(false)
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B7CE8C58-53DA-4160-8BF9-E44A38022897</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Test if IBAction is connected</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test IBAction</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
